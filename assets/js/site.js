@@ -7,6 +7,7 @@ const navigation = [
   { label: "Publications", section: "/publications/", labelOnly: true, children: [
     ["International", "/publications/international.html"], ["Domestic", "/publications/domestic.html"]
   ]},
+  { label: "Project", href: "/project/" },
   { label: "Activities", section: "/activities/", labelOnly: true, children: [
     ["Courses", "/activities/courses.html"], ["Conferences", "/activities/conferences.html"], ["Invited Talks", "/activities/invited-talks.html"], ["Reviewers", "/activities/peer-review.html"]
   ]},
