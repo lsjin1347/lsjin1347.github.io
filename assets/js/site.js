@@ -9,10 +9,10 @@ const navigation = [
   ]},
   { label: "Project", href: "/project/" },
   { label: "Activities", section: "/activities/", labelOnly: true, children: [
-    ["Courses", "/activities/courses.html"], ["Conferences", "/activities/conferences.html"], ["Invited Talks", "/activities/invited-talks.html"], ["Reviewers", "/activities/peer-review.html"]
+    ["Courses", "/activities/courses.html"], ["Conferences", "/activities/conferences.html"], ["Invited Talks", "/activities/invited-talks.html"], ["Review Activities", "/activities/peer-review.html"]
   ]},
   { label: "News", section: "/news/", labelOnly: true, children: [
-    ["New", "/news/"], ["Gallery", "/news/gallery.html"]
+    ["Events", "/news/"], ["Gallery", "/news/gallery.html"]
   ]},
   { label: "Links", href: "/links/" }
 ];
