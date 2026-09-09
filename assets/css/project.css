@@ -1,0 +1,43 @@
+/* Project page only; uses the site's existing palette and typography. */
+.project-page {
+  width: min(calc(100% - 40px), 1040px);
+  margin: 0 auto;
+  padding: 44px 0 68px;
+}
+
+.project-page .project-entry {
+  padding: 22px 26px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+}
+
+.project-page .project-entry + .project-entry { margin-top: 24px; }
+
+.project-page .project-entry h2 {
+  margin: 0 0 16px;
+  padding-bottom: 12px;
+  color: var(--navy-dark);
+  border-bottom: 1px solid var(--line);
+  font-size: clamp(1.05rem, 2vw, 1.25rem);
+  font-weight: 650;
+  line-height: 1.5;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+
+.project-page .project-number { margin-right: 4px; color: var(--navy); font-size: 1.15em; font-weight: 800; }
+.project-page .project-role { color: var(--navy); font-size: .9em; font-weight: 600; }
+.project-page .project-details { margin: 0; }
+.project-page .project-details > div { display: grid; grid-template-columns: 84px minmax(0, 1fr); gap: 16px; }
+.project-page .project-details > div + div { margin-top: 7px; }
+.project-page .project-details dt { color: var(--navy-dark); font-weight: 700; }
+.project-page .project-details dd { margin: 0; word-break: keep-all; overflow-wrap: anywhere; }
+
+@media (max-width: 600px) {
+  .project-page { width: calc(100% - 28px); padding: 32px 0 52px; }
+  .project-page .project-entry { padding: 18px; }
+  .project-page .project-entry + .project-entry { margin-top: 20px; }
+  .project-page .project-details > div { grid-template-columns: minmax(0, 1fr); gap: 2px; }
+  .project-page .project-details > div + div { margin-top: 10px; }
+}
