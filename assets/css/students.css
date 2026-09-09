@@ -1,0 +1,53 @@
+/* Loaded only by the Students page; shared Members styles stay unchanged. */
+.students-page {
+  width: min(calc(100% - 40px), 1040px);
+  margin: 0 auto;
+  padding: 44px 0 68px;
+}
+
+.students-page .student-profile {
+  display: grid;
+  grid-template-columns: 168px minmax(0, 1fr);
+  gap: 32px;
+  align-items: center;
+}
+
+.students-page .student-profile + .student-profile {
+  margin-top: 28px;
+  padding-top: 28px;
+  border-top: 1px solid var(--line);
+}
+
+.students-page .student-portrait {
+  display: block;
+  width: 168px;
+  height: 216px;
+  object-fit: cover;
+  object-position: center 25%;
+  border-radius: 6px;
+}
+
+.students-page .student-details h2 {
+  margin: 0 0 6px;
+  color: var(--navy-dark);
+  font-size: clamp(1.3rem, 2.4vw, 1.6rem);
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.students-page .student-details p { margin: 0; }
+.students-page .student-position { color: var(--navy); font-weight: 600; }
+.students-page .student-date { color: var(--muted); font-size: .9rem; }
+
+.students-page .student-details h3 {
+  margin: 18px 0 5px;
+  color: var(--navy-dark);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+@media (max-width: 600px) {
+  .students-page { width: calc(100% - 28px); padding: 30px 0 52px; }
+  .students-page .student-profile { grid-template-columns: minmax(0, 1fr); gap: 18px; }
+}
